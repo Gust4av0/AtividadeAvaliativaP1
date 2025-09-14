@@ -51,7 +51,7 @@ export let produtosMock = [
     preparo: "Cerveja pronta para consumo",
     imagem: require("../assets/images/cerveja.webp"),
   },
-    {
+  {
     id: 5,
     nome: "Caipirinha",
     descricao: "Caipirinha clássica com limão e cachaça",
@@ -130,7 +130,7 @@ export let produtosMock = [
     imagem: require("../assets/images/foto_torresmo.jpg"),
   },
   {
-    id: 11, 
+    id: 11,
     nome: "Brigadeiro de Panela",
     descricao: "Brigadeiro de chocolate cremoso",
     preco: 8.0,
@@ -143,7 +143,7 @@ export let produtosMock = [
     imagem: require("../assets/images/foto_brigadeiro.jpg"),
   },
   {
-    id: 12, 
+    id: 12,
     nome: "Churros com Doce de Leite",
     descricao: "Churros crocantes com recheio de doce de leite",
     preco: 12.0,
@@ -214,7 +214,7 @@ let nextId = produtosMock.length + 1;
 
 // Função para adicionar produto com ID auto increment
 export function adicionarProduto(novoProduto) {
-  const produtoComId = { id: nextId++, ...novoProduto }; // Aqui vai gerar o próximo ID
+  const produtoComId = { id: nextId++, ...novoProduto }; // Aqui vai gerar o próximo ID disponível
   produtosMock.push(produtoComId);
   return produtoComId;
 }

@@ -36,14 +36,14 @@ export default function CadastroProduto({ navigation }) {
       `Produto ${produtoCadastrado.nome} cadastrado com ID ${produtoCadastrado.id}`
     );
 
-    // Limpar os campos
+    // Limpar os campos após o cadastro
     setNome("");
     setDescricao("");
     setPreco("");
     setCategoria("");
     setImagem("");
 
-    // Voltar para a tela anterior
+    // Voltar para a tela anterior ap´so finalizar o cadastro
     navigation.goBack();
   };
 
@@ -83,12 +83,10 @@ export default function CadastroProduto({ navigation }) {
         style={styles.input}
       />
 
-      {/* Botão Cadastrar */}
       <TouchableOpacity onPress={handleCadastrar} style={styles.button}>
         <Text style={styles.buttonText}>Cadastrar</Text>
       </TouchableOpacity>
 
-      {/* Botão Voltar */}
       <TouchableOpacity
         onPress={() => navigation.goBack()}
         style={[styles.button, styles.backButton]}

@@ -47,7 +47,6 @@ export default function CategoriaProduto({ route, navigation }) {
     <View style={styles.container}>
       <Text style={styles.title}>{categoria}</Text>
 
-      {/* Campo para pesquisar pelo nome ou id */}
       <TextInput
         placeholder="Pesquisar por nome ou ID"
         value={searchText}
@@ -55,7 +54,6 @@ export default function CategoriaProduto({ route, navigation }) {
         style={styles.searchInput}
       />
 
-      {/* Lista os produtos */}
       <FlatList
         data={itens}
         keyExtractor={(item) => item.id.toString()}
@@ -73,7 +71,6 @@ export default function CategoriaProduto({ route, navigation }) {
         }
       />
 
-      {/* Modal de detalhes do produto */}
       <Modal
         visible={modalVisible}
         animationType="slide"

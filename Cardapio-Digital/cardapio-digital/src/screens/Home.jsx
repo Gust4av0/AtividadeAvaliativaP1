@@ -13,7 +13,6 @@ export default function HomeScreen({ navigation }) {
     <View style={styles.container}>
       <Text style={styles.title}>Categorias do Cardápio</Text>
 
-      {/* Mostrar Categorias em Duas Colunas  */}
       {categoriasEmPares.map((par, index) => (
         <View key={index} style={styles.row}>
           {par.map((categoria, idx) => (

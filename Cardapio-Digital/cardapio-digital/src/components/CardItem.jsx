@@ -11,7 +11,6 @@ export default function CardItem({ item, onPress }) {
         style={styles.image}
       />
       <View style={styles.info}>
-        {/* Aqui vai exibir o ID do Produto */}
         <Text style={styles.id}>ID: {item.id}</Text>
 
         <Text style={styles.nome}>{item.nome}</Text>
